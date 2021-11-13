@@ -6,22 +6,22 @@
 }
 
 body {
-    /* background: url('../img/bg/Ocean-BG.png');
+    background: url('../img/bg/Ocean-BG.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
     font-family: 'Rum Raisin', sans-serif;
     color: #fafafa;
     margin: 0 auto;
 }
 
-.image-container {
+/* .image-container {
     background: url('../img/bg/Ocean-BG.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-}
+} */
 
 .logo {
     font-size: 4em;
@@ -148,6 +148,7 @@ h2 {
 footer  {
     text-align: center;
     background-color: #e873ff;
+    margin-top: 8em;
 }
 
 .footer {

@@ -39,16 +39,20 @@ const app = () => {
   });
 
   $(".bg-ocean").on("click", function () {
-    $(".image-container").css(
+    $("body").css(
       "background-image",
-      "url(http://127.0.0.1:5500/img/bg/Ocean-BG.png)"
+      "url(./img/bg/Ocean-BG.png)"
+    );
+    $("footer").css(
+      "background-color",
+      "#e873ff"
     );
   });
 
   $(".bg-mount").on("click", function () {
-    $(".image-container").css(
+    $("body").css(
       "background-image",
-      "url(http://127.0.0.1:5500/img/bg/Mountain-BG.png)"
+      "url(./img/bg/Mountain-BG.png)"
     );
     $("footer").css(
       "background-color",
@@ -57,9 +61,9 @@ const app = () => {
   });
 
   $(".bg-fire").on("click", function () {
-    $(".image-container").css(
+    $("body").css(
       "background-image",
-      "url(http://127.0.0.1:5500/img/bg/Fire-BG.png)"
+      "url(./img/bg/Fire-BG.png)"
     );
     $("footer").css(
       "background-color",
@@ -68,9 +72,9 @@ const app = () => {
   });
 
   $(".bg-storm").on("click", function () {
-    $(".image-container").css(
+    $("body").css(
       "background-image",
-      "url(http://127.0.0.1:5500/img/bg/Strom-BG.png)"
+      "url(./img/bg/Strom-BG.png)"
     );
     $("footer").css(
       "background-color",
@@ -79,9 +83,9 @@ const app = () => {
   });
 
   $(".bg-rain").on("click", function () {
-    $(".image-container").css(
+    $("body").css(
       "background-image",
-      "url(http://127.0.0.1:5500/img/bg/Rainy-BG.png)"
+      "url(./img/bg/Rainy-BG.png)"
     );
     $("footer").css(
       "background-color",
@@ -90,9 +94,9 @@ const app = () => {
   });
 
   $(".bg-silent").on("click", function () {
-    $(".image-container").css(
+    $("body").css(
       "background-image",
-      "url(http://127.0.0.1:5500/img/bg/Silent-BG.png)"
+      "url(./img/bg/Silent-BG.png)"
     );
     $("footer").css(
       "background-color",
