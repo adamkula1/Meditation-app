@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Meditation app</title>
+
+    <link rel="stylesheettype" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="image-container">
+      <header>
+        <p class="logo">Meditation Timer</p>
+      </header>
+
+      <main>
+        <div class="app" data-aos="fade-right" data-aos-easing="ease-in-sine">
+          <section class="left-column column">
+            <div class="time-select">
+              <button data-time="5">5 Minutes</button>
+              <button data-time="600">10 Minutes</button>
+              <button data-time="900">15 Minutes</button>
+              <button data-time="1200">20 Minutes</button>
+              <button data-time="1500">25 Minutes</button>
+              <button data-time="1800">30 Minutes</button>
+              <button data-time="2700">45 Minutes</button>
+              <button data-time="3600">1 Hour</button>
+            </div>
+            <!-- <div>
+              <button id="datetime" data-time="0"><input class="button-set timepicker" autocomplete="off"></input>Set</button>
+              
+            </div> -->
+          </section>
+
+          <section class="center-column column">
+            <h1 class="nameSound">Ocean</h1>
+
+            <div class="player-container">
+              <audio class="song">
+                <source src="./sounds/beach.mp3" />
+              </audio>
+              <div>
+                <svg
+                  class="track-outline"
+                  width="500"
+                  height="500"
+                  viewBox="0 0 500 500"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- <circle
+            cx="226.5"
+            cy="226.5"
+            r="216.5"
+            stroke="white"
+            stroke-width="20"
+          /> -->
+                  <line
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="500"
+                    stroke="white"
+                    stroke-width="20"
+                  />
+                </svg>
+
+                <svg
+                  class="moving-outline"
+                  width="500"
+                  height="500"
+                  viewBox="0 0 500 500"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- <circle
+            cx="226.5"
+            cy="226.5"
+            r="216.5"
+            stroke="#018EBA"
+            stroke-width="20"
+          /> -->
+                  <line
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="500"
+                    stroke="#018EBA"
+                    stroke-width="20"
+                  />
+                </svg>
+              </div>
+
+              <h2 class="time-display">0:00</h2>
+
+              <div class="player-container">
+                <img src="./img/svg/play-icon.svg" alt="play" class="play" />
+                <img src="./img/svg/stop-icon.svg" alt="stop" class="stop" />
+              </div>
+            </div>
+          </section>
+
+          <section class="right-column">
+            <div class="sound-picker">
+              <div class="picker-border">
+                <button
+                  class="bg-ocean"
+                  data-sound="./sounds/beach.mp3"
+                  data-img="./img/bg/Ocean-BG.png"
+                  value="Ocean"
+                >
+                  <img src="./img/circle/ocean-rem.png" alt="Ocean" />
+                </button>
+              </div>
+              <div class="picker-border">
+                <button
+                  class="bg-mount"
+                  data-sound="./sounds/forest.mp3"
+                  data-img="./img/bg/Mountain-BG.png"
+                  src="./img/bg/Mountain-BG.png"
+                  value="Forest"
+                >
+                  <img src="./img/circle/forest-rem.png" alt="Forest" />
+                </button>
+              </div>
+              <div class="picker-border">
+                <button
+                  class="bg-fire"
+                  data-sound="./sounds/fire.mp3"
+                  data-img="/img/bg/Fire-BG.png"
+                  value="Fire"
+                >
+                  <img src="./img/circle/fire-rem.png" alt="Fire" />
+                </button>
+              </div>
+              <div class="picker-border">
+                <button
+                  class="bg-storm"
+                  data-sound="./sounds/thunder.mp3"
+                  data-img="./img/bg/Strom-BG.png"
+                  value="Thunder"
+                >
+                  <img src="./img/circle/storm-rem.png" alt="Storm" />
+                </button>
+              </div>
+              <div class="picker-border">
+                <button
+                  class="bg-rain"
+                  data-sound="./sounds/rain.mp3"
+                  data-img="./img/bg/Rainy-BG.png"
+                  value="Rainy"
+                >
+                  <img src="./img/circle/rainy-rem.png" alt="Rain" />
+                </button>
+              </div>
+              <div class="picker-border">
+                <button
+                  class="bg-silent"
+                  data-sound="./sounds/silent.mp3"
+                  data-img="./img/bg/Silent-BG.png"
+                  value="Silent"
+                >
+                  <img src="./img/circle/silent-rem.png" alt="Silent" />
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <a
+        href="https://adamkula.sk/portfolio.html"
+        class="footer"
+        target="_blanket"
+        >© Adam Kula 2021. All Rights Reserved</a
+      >
+      <a href="https://www.vecteezy.com/members/sceneit?utf8=%E2%9C%93&search=weather&sort_by=popular" target="_blanket">IMG</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        disable: "mobile",
+        startEvent: "DOMContentLoaded",
+        easing: "ease",
+        once: true,
+      });
+    </script>
+  </body>
+</html>
